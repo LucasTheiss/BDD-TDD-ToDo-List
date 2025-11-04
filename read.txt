@@ -1,9 +1,0 @@
-Algumas funções já passaram em mais de um teste realizado para ela, portanto, não houve falha no teste inicialmente
-
-Em alguns CT houve a refatoração, ao perceber uma possibilidade de melhoria, por exemplo no CT8:
-    Antes, era feito um loop para verificar se algum item da lista estava vencido e não marcado, 
-    caso esse item estivesse escrito e não marcado, então realizava uma query.
-Na refatoração efetivamente, fiz uma função atualizar_tarefas_vencidas.py, que diretamente roda um UPDATE com o WHERE semelhante a condição anterior
-
-Inicialmente, havia o plano de fazer uma função para marcar como status concluído e outra para desmarcar esse status. 
-No momento da refatoração, após a realização do teste de marcar, ficou evidente de que não havia a necessidade de sequer ter mais de uma função, unificando em uma que altera o status com uma flag independente de qual seja
