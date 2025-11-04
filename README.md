@@ -18,6 +18,7 @@ O projeto foi desenvolvido em **Python**, seguindo princípios de **Orientação
 * **OOP:** As responsabilidades são separadas, com a classe `Tarefa` (`Model/tarefa.py`) representando a entidade de dados e a classe `TarefaRepo` (`Repo/tarefa_repo.py`) atuando como um repositório que abstrai a lógica de negócios e o acesso ao banco de dados.
 * **Banco de Dados:** Foi utilizado **SQLite** para persistência dos dados, com scripts de criação e limpeza (`db/db.py`).
 * **Testes:** A suíte de testes foi construída com a biblioteca nativa `unittest` do Python.
+* **Evidências:** Localizadas na pasta evi, o nome indica o caso de teste (ctx, onde x é o número do caso de teste), podendo ser acompanhado por "-s" caso indique que é uma evidência de sucesso, caso contrário, representa uma evidência de falha.
 
 ## BDD
 Os **casos de teste** formulados e organizados através do **BDD** e **linguagem Gherking** foram: 
