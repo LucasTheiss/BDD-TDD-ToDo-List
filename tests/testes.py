@@ -57,7 +57,7 @@ class TestesToDoList(unittest.TestCase):
         self.tarefaRepo.adicionar_tarefa(self.tarefaCorreta)
         tarefa_id = self.tarefaRepo.visualizar_tarefas()[0]['id']
 
-        self.assertTrue(self.tarefaRepo.editar_tarefa(tarefa_id, "Tarefa Editada", "Descrição Editada", "20-12-2025"))
+        self.assertTrue(self.tarefaRepo.editar_tarefa(tarefa_id, "Tarefa Editada", "Descrição Editada", "2025-12-20"))
         
         tarefa = self.tarefaRepo.visualizar_tarefas()[0]
 
@@ -76,9 +76,9 @@ class TestesToDoList(unittest.TestCase):
         tarefa = self.tarefaRepo.visualizar_tarefas()[0]
 
         self.assertTrue(
-            tarefa['nome'] == "Tarefa" and
-            tarefa['descricao'] == "Fazer Tarefa" and
-            tarefa['data'] == "2025-10-11"
+            tarefa['nome'] == self.tarefaCorreta.titulo and
+            tarefa['descricao'] == self.tarefaCorreta.descricao and
+            tarefa['data'] == self.tarefaCorreta.data_vencimento
         )
     
     def test_vencimentoTarefa(self):
