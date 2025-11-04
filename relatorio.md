@@ -2,7 +2,7 @@
 
 O desenvolvimento de cada funcionalidade seguiu estritamente o ciclo TDD. Abaixo está o relatório de passos para cada Caso de Teste (CT), com as evidências de falha (Red) e sucesso (Green) extraídas dos arquivos. Quando houve refatoração (na fase Refactor), há a explicação das alterações realizadas ao perceber que algo poderia ser feito de uma forma melhor.
 
-**`Obs*: Como placeholder para evitar exceções de código, as funções eram criadas com uma apenas linha que retornava False ou None`**
+**`Obs*: Como placeholder para evitar exceções de código, as funções eram criadas com apenas uma linha que retornava False ou None`**
 
 ### CT 1: Criar Tarefa Corretamente
 * **Red:** Um teste foi escrito (`test_criarTarefaCorretamente`) para adicionar uma tarefa e falhou. A evidência (`ct1.png`) mostra a falha `AssertionError: False is not true`.
